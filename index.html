@@ -12,7 +12,7 @@
   <header class="bg-slate-500 px-3 lg:px-20">
     <ul class="flex justify-between lg:justify-end lg:gap-32 text-xl py-4 ">
       <li class="bg-slate-400 border-y-4 rounded-lg">Home</li>
-      <li>About</li>
+      <li class="hover:border-b-4 border-gray-300">About</li>
       <li>Work</li>
       <li>Exprience</li>
       <li>Contact</li>
@@ -33,12 +33,23 @@
     </section>
 
     <section class="h-96 border-4 bg-slate-300 grid grid-cols-2 gap-1 lg:grid-cols-3 grid-rows-5 lg:grid-rows-4">
-      <div class="bg-cyan-500 lg:row-span-2">One</div>
+      <div class="bg-cyan-500 lg:row-span-2">
+        <div class="h-1/3 bg-red-500"></div>
+        <div class="h-1/3 bg-green-500"></div>
+        <div class="h-1/3 bg-blue-500"></div>
+      </div>
       <div class="bg-slate-500">Two</div>
-      <div class="bg-cyan-500 lg:row-span-2">Three</div>
+      <div class="bg-cyan-500 lg:row-span-2 flex justify-center">
+        <div
+          class="h-16 lg:h-40 w-16 lg:w-40 bg-slate-300 rounded-tl-3xl hover:rounded-tl-none hover:rounded-tr-3xl rounded-br-3xl hover:rounded-br-none hover:rounded-bl-3xl hover:bg-red-600 mt-1 lg:mt-3 transition-all duration-500  ring-2 ring-green-500 ring-offset-2 lg:ring-offset-4">
+        </div>
+      </div>
       <div class="bg-slate-400 ">Four</div>
       <div class="bg-slate-500">Five</div>
-      <div class="bg-cyan-400 lg:row-span-2">Six</div>
+      <div class="bg-green-800 lg:row-span-2 flex  justify-center ">
+        <div class="h-16 lg:h-40 w-16 lg:w-40 bg-red-700 rounded-full mt-1 lg:mt-3 border-2 border-gray-500">
+        </div>
+      </div>
       <div class="bg-slate-500">Seven</div>
       <div class="bg-slate-400 ">Eight</div>
       <div class="bg-slate-400 col-span-2 lg:col-auto">Nine</div>
